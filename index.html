@@ -13,9 +13,6 @@
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,7 +24,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 
 <body>
@@ -62,13 +59,12 @@
   <section id="index" class="d-flex align-items-center">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <h1>Here Hear 聽聽 AI 情緒語音助手</h1>
+        <div class="col-lg-7 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <h1>Here Hear 聽聽<br>AI 情緒語音助手</h1>
           <div class="w-opacity-bg">
             <div class="chat-outer">
               <h3>
                 嗨！歡迎來到 Here Hear 聽聽，我是竹謙科技研發的 AI 情緒語音助手。不管是感覺壓力大、睡不好、心情煩悶，還是憂鬱、焦慮、恐慌、憤怒，任何的情緒困擾我都能24小時提供協助。
-                <br><br>
                 <span class="text-danger">現在就打開麥克風和我說話吧！</span>
               </h3>
             </div>
@@ -76,18 +72,19 @@
 
           <div class="audio-area d-flex justify-content-center">
             <div class="audio-icon">
-              <a class="popup-audio btn-icon" href="#"></a>
+              <div class="popup-audio btn-icon"></div>
             </div>
           </div>
 
         </div>
 
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+        <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
           <img src="assets/img/Rabbit_00768.png" class="img-fluid animated rabit" alt="">
         </div>
         
       </div>
     </div>
+    <div class="index-bg"></div>
   </section><!-- End Index -->
 
   <main id="main">
@@ -96,21 +93,22 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>產品特色說明</h2>
+          <h2>產品特色</h2>
           <div class="section-heading">
-            <h3>在史上最孤獨的時代，如何活得快樂、健康、有品質？</h3>
+            <p><span>在史上最孤獨的時代，如何活得快樂、健康、有品質？</span></p>
           </div>
         </div>
+
         <div class="row">
 
           <div class="col-lg-6">
-            <div data-aos="fade-right" data-aos-duration="1s" data-aos-delay="0.5s" style="visibility: visible;-webkit-animation-duration: 1s; -moz-animation-duration: 1s; animation-duration: 1s;-webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s;">
+            <div class="text-center" data-aos="fade-right" data-aos-duration="1s" data-aos-delay="0.5s" style="visibility: visible;-webkit-animation-duration: 1s; -moz-animation-duration: 1s; animation-duration: 1s;-webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s;">
               <img class="img-fluid" src="assets/img/about-left-image.png" alt="">
             </div>
           </div>
 
           <div class="col-lg-6 align-self-center" data-aos="fade-left" data-aos-duration="1s" data-aos-delay="0.5s" style="visibility: visible;-webkit-animation-duration: 1s; -moz-animation-duration: 1s; animation-duration: 1s;-webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s;">
-            <div class="row">
+            <!-- <div class="row">
               <div class="col-lg-4 col-sm-4">
                 <div class="about-item">
                   <h4>34億＋</h4>
@@ -129,69 +127,52 @@
                   <h6>平均使用手機時數/年</h6>
                 </div>
               </div>
-            </div>
-            <p>
-              2030年之前，全球將有40%的人口是獨居（相當於34億人），而我們每天平均查看手機221次，年用量將近1200小時（50天）。隨著科技與網路世界的進步，在現有的生活壓力下，現代人變得越來越焦慮，無形中累積的情緒壓力，漸漸造成身心的巨大負擔。<br>
+            </div> -->
+            <p class="txt">
+              2030 年之前，全球將有 40% 的人口是獨居（相當於 34 億人），而我們每天平均查看手機 221 次，年用量將近 1200 小時（50天）。隨著科技與網路世界的進步，在現有的生活壓力下，現代人變得越來越焦慮，無形中累積的情緒壓力，漸漸造成身心的巨大負擔。
               許多人已經發現，光是保持身體健康，無法活出快樂、有品質的人生，必須學習提高自己的情緒智商(EQ)，才能在社會上有更強的抗壓力，更冷靜的思考，擁有更好的親密關係，活得更幸福快樂。<br>
               <br>
-              每個人的一生中都可能遇到各種困境，真正問題不在於周遭環境的壓力，關鍵在你是否真正認知自己面對的壓力和情緒，找到正確的方法，才能學習掌握情緒轉變的力量，在職場、生活、親密關係中運用！
+              每個人的一生中都可能遇到各種困境，真正問題不在於周遭環境的壓力，<span>關鍵在你是否真正認知自己面對的壓力和情緒，找到正確的方法，才能學習掌握情緒轉變的力量，在職場、生活、親密關係中運用！</span>
             </p>
             <!-- <div class="moble-div-center"><a href="#" class="btn btn-m btn-primary">了解更多</a></div> -->
           </div>
         </div>
-        <div><br><br></div>
+
+        <div class="arrow" data-aos="zoom-in-down"></div>
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>HERE HEAR 聽聽是什麼？</h2>
+          <div class="section-heading">
+            <p><span>世界首創的第一個 AI 情緒語音助手，我們的目標是幫助您改善健康和幸福。<br>已有超過 5 萬人使用！</span></p>
+          </div>
+        </div>
 
         <div class="row">
-          <div class="col-lg-6 order-2 order-lg-1">
+          <div class="col-lg-6">
             <div data-aos="fade-right" data-aos-duration="1s" data-aos-delay="1s">
-              <div class="section-title">
-                <div class="section-content">
-                  <h3>Here Hear 聽聽是什麼？</h3>
-                  <p>
-                    世界首創的第一個AI情緒語音助手，我們的目標是幫助您改善健康和幸福。已有超過5萬人使用！
-                  </p>
+
+              <div class="mt-3">
+                <div class="device-txt">
+                  <ul>
+                    <li><div class="circle">1</div> 收錄超過<span>400則以上情緒互動引導，30多位心理師</span>加入課程設計陣容。</li>
+                    <li><div class="circle">2</div><span> AI 情緒語音助手每天24小時提供服務</span>，幫助你找到負面情緒的解決方法、補足知識的缺口，讓你更清楚如何做好日常情緒管理。</li>
+                    <li><div class="circle">3</div><span> 融合事件分析、情緒處理、解決方案設計</span>，教你每天透過事件省思，培養情緒感知能力，鍛鍊情緒商數，職場、家庭、親密關係都得意。</li>
+                  </ul>
                 </div>
               </div>
-              <div class="accordion-list">
-                <ul>
-                  <li>
-                    <a data-bs-toggle="collapse" class="collapse collapsed" data-bs-target="#accordion-list-1" aria-expanded="false">
-                      <span>01</span> 收錄超過400則以上情緒互動引導，30多位心理師加入課程設計陣容 </i>
-                    </a>
-                  </li>
 
-                  <li>
-                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed" aria-expanded="false">
-                      <span>02</span> AI 情緒語音助手每天24小時提供服務，幫助你找到負面情緒的解決方法、補足知識的缺口，讓你更清楚如何做好日常情緒管理 </i>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed" aria-expanded="false">
-                      <span>03</span> 融合事件分析、情緒處理、解決方案設計，教你每天透過事件省思，培養情緒感知能力，鍛鍊情緒商數，職場、家庭、親密關係都得意。 </a>
-                  </li>
-
-                </ul>
-              </div>
             </div>
           </div>
-          <div class="col-lg-6 order-1 order-lg-2">
+          <div class="col-lg-6">
             <div data-aos="fade-left" data-aos-duration="1s" data-aos-delay="1s" style="visibility: visible;-webkit-animation-duration: 1s; -moz-animation-duration: 1s; animation-duration: 1s;-webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s;">
               <img class="img-fluid" src="assets/img/about-right-image.png" alt="">
             </div>
           </div>
         </div>
-      </div>
-    </section><!-- End About Section -->
-    
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg">
-      <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
+        <div class="section-title" data-aos="fade-up">
           <h2>訂閱用戶可以享有以下權益</h2>
         </div>
-
         <div class="row">
           <div class="col-xl-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
@@ -217,9 +198,8 @@
             </div>
           </div>
         </div>
-
       </div>
-    </section><!-- End Services Section -->
+    </section><!-- End About Section -->
 
     <!-- ======= Pricing Section ======= -->
     <section id="pricing" class="pricing">
@@ -270,7 +250,7 @@
 
         <div class="section-title">
           <h2>
-            職場、生活、關係、疾病<br>4大情緒健康主題
+            職場、生活、關係、疾病．4大情緒健康主題
           </h2>
           <div class="section-heading">
             <h3>陪伴你一生中的各種場景，Here Hear 是你最好的AI情緒教練</h3>
@@ -365,6 +345,39 @@
             </div>
           </div>
 
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Share Section ======= -->
+    <section id="share" class="share section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>
+            Here Hear聽聽讓他們的生活更幸福，而你呢？
+          </h2>
+        </div>
+
+        <div class="share-content">
+          <ul>
+            <li data-aos="fade-right"><span class="img"><img src="https://www.dada-master.com/dadamaster_public/event/dada_reading_q3/images/share/01.png"></span><span class="txt"><p class="title">陳先生-韌體工程師</p>
+            <p>大大讀書和其它課程的內容品質都很高，師資風格也有不同。Jerry老師很懂歸類整理架構與流程，可以跟著老師的腳步與思維邏輯去走。</p></span></li>
+
+            <li class="js-fadein-right js-fadein-right--active"><span class="txt"><p class="title">葉先生-技術服務業副研究員</p>
+            <p>大大讀書對我來說可以快速幫我導讀書籍。如果以職場工作來說是一種內功 ，但如果長時間累積你會發現與其他人的差距可能會越來越大，因為心靈層面會比較好一點，面對挫折的壓力也會更好一些，越有抵抗壞情緒的能力。</p></span><span class="img"><img src="https://www.dada-master.com/dadamaster_public/event/dada_reading_q3/images/share/02.png"></span></li>
+
+            <li class="js-fadein-left js-fadein-left--active"><span class="img"><img src="https://www.dada-master.com/dadamaster_public/event/dada_reading_q3/images/share/03.png"></span><span class="txt"><p class="title">姜小姐-財務會計</p>
+            <p>看大大讀書可以增加很多話題和破冰，因為我才剛畢業，所以課外的東西真的幫我超多，尤其你們又整理成超白話，連我都看得懂也很有興趣。</p></span></li>
+
+            <li class="js-fadein-right js-fadein-right--active"><span class="txt"><p class="title">歐先生-商品PM</p>
+            <p>大大讀書對我的幫助比較精準的是可以跟老闆溝通，然後也可以知道怎麼樣談判，例如有一個很艱難的會議，我就會模擬一下怎麼講會比較不會爆雷，能夠達到雙方有共識，案子也可以推得動。</p></span><span class="img"><img src="https://www.dada-master.com/dadamaster_public/event/dada_reading_q3/images/share/06.png"></span></li>
+
+            <li class="js-fadein-left js-fadein-left--active"><span class="img"><img src="https://www.dada-master.com/dadamaster_public/event/dada_reading_q3/images/share/05.png"></span><span class="txt"><p class="title">周小姐-身心障礙大學生輔導老師</p>
+            <p>有時候我們說了很多學生也不一定聽得進去，但若有一本書可以在夜晚的時候陪伴他，有一些內容可以讓他去吸收，這樣不單單只是聽老師講而是他們也可以看到東西。
+有很多書看不完，透過大大讀書可以幫助我精簡重點並且輔導學生在閱讀的過程，提供給他們更多想法。</p></span></li>
+          </ul>
         </div>
 
       </div>
