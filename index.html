@@ -17,14 +17,11 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <!-- <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet"> -->
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/vendor/owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/vendor/owlcarousel/owl.theme.default.min.css">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
 </head>
 
@@ -46,7 +43,7 @@
           <li><a class="nav-link scrollto active" href="#index">首頁</a></li>
           <li><a class="nav-link scrollto" href="#intro">產品特色</a></li>
           <li><a class="nav-link scrollto" href="#pricing">如何訂閱</a></li>
-          <li><a class="nav-link scrollto" href="#team">4大情緒健康主題</a></li>
+          <li><a class="nav-link scrollto" href="#topic">4大情緒健康主題</a></li>
           <li><a class="nav-link scrollto" href="#share">使用者評價</a></li>
           <li><a class="nav-link scrollto" href="#doctor">心理師團隊</a></li>
           <li><a class="getstarted scrollto" href="#index">立即體驗</a></li>
@@ -61,7 +58,7 @@
   <section id="index" class="d-flex align-items-center">
     <div class="container">
       <div class="row">
-        <div class="col-lg-7 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-lg-7 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
           <h1>Here Hear 聽聽<br>AI 情緒語音助手</h1>
           <div class="w-opacity-bg">
             <div class="chat-outer">
@@ -80,7 +77,7 @@
 
         </div>
 
-        <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+        <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
           <img src="assets/img/Rabbit_00768.png" class="img-fluid animated rabit" alt="">
         </div>
         
@@ -89,7 +86,7 @@
     <div class="index-bg"></div>
   </section><!-- End Index -->
 
-  <main id="main">
+  <main id="main" class="aos-all">
     <!-- ======= Intro Section ======= -->
     <section id="intro" class="intro-us section">
       <div class="container">
@@ -104,32 +101,12 @@
         <div class="row">
 
           <div class="col-lg-6">
-            <div class="text-center" data-aos="fade-right" data-aos-duration="1s" data-aos-delay="0.5s" style="visibility: visible;-webkit-animation-duration: 1s; -moz-animation-duration: 1s; animation-duration: 1s;-webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s;">
+            <div class="text-center" data-aos="fade-right" data-aos-duration="500">
               <img class="img-fluid" src="assets/img/about-left-image.png" alt="">
             </div>
           </div>
 
-          <div class="col-lg-6 align-self-center" data-aos="fade-left" data-aos-duration="1s" data-aos-delay="0.5s" style="visibility: visible;-webkit-animation-duration: 1s; -moz-animation-duration: 1s; animation-duration: 1s;-webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s;">
-            <!-- <div class="row">
-              <div class="col-lg-4 col-sm-4">
-                <div class="about-item">
-                  <h4>34億＋</h4>
-                  <h6>全球獨居人口</h6>
-                </div>
-              </div>
-              <div class="col-lg-4 col-sm-4">
-                <div class="about-item">
-                  <h4>221+</h4>
-                  <h6>查看手機次數/天</h6>
-                </div>
-              </div>
-              <div class="col-lg-4 col-sm-4">
-                <div class="about-item">
-                  <h4>1200hr+</h4>
-                  <h6>平均使用手機時數/年</h6>
-                </div>
-              </div>
-            </div> -->
+          <div class="col-lg-6 align-self-center" data-aos="fade-left" data-aos-duration="500">
             <p class="txt">
               2030 年之前，全球將有 40% 的人口是獨居（相當於 34 億人），而我們每天平均查看手機 221 次，年用量將近 1200 小時（50天）。隨著科技與網路世界的進步，在現有的生活壓力下，現代人變得越來越焦慮，無形中累積的情緒壓力，漸漸造成身心的巨大負擔。
               許多人已經發現，光是保持身體健康，無法活出快樂、有品質的人生，必須學習提高自己的情緒智商(EQ)，才能在社會上有更強的抗壓力，更冷靜的思考，擁有更好的親密關係，活得更幸福快樂。<br>
@@ -140,9 +117,9 @@
           </div>
         </div>
 
-        <div class="arrow" data-aos="zoom-in-down"></div>
+        <div class="arrow" data-aos="zoom-in-down" data-aos-duration="800"></div>
 
-        <div class="section-title" data-aos="fade-up">
+        <div class="section-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
           <h2>HERE HEAR 聽聽是什麼？</h2>
           <div class="section-heading">
             <p><span>世界首創的第一個 AI 情緒語音助手，我們的目標是幫助您改善健康和幸福。<br>已有超過 5 萬人使用！</span></p>
@@ -151,7 +128,7 @@
 
         <div class="row">
           <div class="col-lg-6">
-            <div data-aos="fade-right" data-aos-duration="1s" data-aos-delay="1s">
+            <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
 
               <div class="mt-3">
                 <div class="device-txt">
@@ -166,17 +143,17 @@
             </div>
           </div>
           <div class="col-lg-6">
-            <div data-aos="fade-left" data-aos-duration="1s" data-aos-delay="1s" style="visibility: visible;-webkit-animation-duration: 1s; -moz-animation-duration: 1s; animation-duration: 1s;-webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s;">
+            <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">
               <img class="img-fluid" src="assets/img/about-right-image.png" alt="">
             </div>
           </div>
         </div>
 
-        <div class="section-title" data-aos="fade-up">
+        <div class="section-title" data-aos="fade-up" data-aos-duration="1000">
           <h2>訂閱用戶可以享有以下權益</h2>
         </div>
         <div class="row">
-          <div class="col-xl-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-4 col-12 d-flex align-items-stretch" data-aos="zoom-in" data-aos-duration="10s00" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
               <h4>支援所有語音裝置平台</h4>
@@ -184,7 +161,7 @@
             </div>
           </div>
 
-          <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="col-lg-4 col-12 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-file"></i></div>
               <h4>500首+ 優質舒壓音樂</h4>
@@ -192,7 +169,7 @@
             </div>
           </div>
 
-          <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="col-lg-4 col-12 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-tachometer"></i></div>
               <h4>每日助眠引導</h4>
@@ -210,34 +187,44 @@
         <div class="section-title">
           <h2>該怎麼訂閱加入？</h2>
           <div class="section-heading">
-            <h3>兩種方案任你選，隨時隨地服務你</h3>
+            <p>兩種方案任你選，隨時隨地服務你</p>
           </div>
         </div>
 
         <div class="row">
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="box">
-              <h3>月訂閱</h3>
-              <h4><sup>NTD</sup>390<span> / 月</span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i> 每個月390元，需綁定信用卡，到期後每月將自動續訂，並於您綁定的信用卡自動扣款。</li>
-              </ul>
-              <a href="#" class="buy-btn">了解更多</a>
+            <div class="box box-1">
+
+              <div class="info">
+                <h3>月訂閱</h3>
+                <h4><sup>$</sup>390<span> / 月</span></h4>
+                <p>
+                  每個月390元，需綁定信用卡，到期後每月將自動續訂，並於您綁定的信用卡自動扣款。
+                </p>
+                <div class="foot-cta">
+                  <a href="#" class="buy-btn">了解更多</a>
+                </div>
+              </div>
+
+              <div class="feather"><img src="assets/img/feather1.svg"/></div>
             </div>
           </div>
 
           <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="box featured">
-              <h3>年訂閱</h3>
-              <h4><sup>NTD</sup>1,990<span> / 年</span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i> 
-                  <span class="text-danger">一年1,990元，每月平均僅166元，</span>
-                  自到期後將不自動續訂，您綁定的信用卡將不自動扣款。
-                </li>
-              </ul>
-              <a href="#" class="buy-btn">了解更多</a>
+            <div class="box box-2">
+              <div class="info">
+                <h3>年訂閱</h3>
+                <h4><sup>$</sup>1,990<span> / 年</span></h4>
+                <p>
+                  <span style="color:yellow;">一年1,990元，每月平均僅166元，</span>
+                    自到期後將不自動續訂，您綁定的信用卡將不自動扣款。
+                </p>
+                <div class="foot-cta">
+                  <a href="#" class="buy-btn">了解更多</a>
+                </div>
+              </div>
+              <div class="feather"><img src="assets/img/feather2.svg"/></div>
             </div>
           </div>
 
@@ -246,103 +233,183 @@
       </div>
     </section><!-- End Pricing Section -->
 
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team section-bg">
-      <div class="container" data-aos="fade-up">
+    <!-- ======= Topic Section ======= -->
+    <section id="topic" class="topic section-bg">
+      <div class="container" data-aos="fade-down" data-aos-duration="1000">
 
         <div class="section-title">
           <h2>
             職場、生活、關係、疾病．4大情緒健康主題
           </h2>
           <div class="section-heading">
-            <h3>陪伴你一生中的各種場景，Here Hear 是你最好的 AI 情緒教練</h3>
+            <p>陪伴你一生中的各種場景，Here Hear 是你最好的 AI 情緒教練</p>
           </div>
         </div>
 
         <div class="row">
 
           <div class="col-lg-6">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
-              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>A｜提升職場抗壓力</h4>
-                <span># 職場壓力管理</span>
-                <p>
-                  對你來說工作是什麼？該如何擺脫工作的厭世感？<br>
-                  透過 AI 語音情緒互動課程，帶你將工作的疲憊與厭倦，化為正向的生活動力！
-                </p>
-                <p>
-                  你將學會<br>
-                  《善用情緒管理，強化職場溝通力》<br>
-                  《遇到逆境挫折，讓情緒韌性來幫助你》<br>
-                  《如何將工作低潮期轉化為工作動力》<br>
-                  《工作、家庭、感情之間的平衡生活》<br>
-                </p>
+            <div class="d-flex align-items-start" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
+              <div class="topic-card color-1">
+
+                <div class="card-top">
+                  <div class="card-num">A</div>
+                  <div class="card-title">
+                    <h4>提升職場抗壓力</h4>
+                    <span># 職場壓力管理</span>
+                  </div>
+                </div>
+                
+                <div class="card-info">
+
+                  <div class="description">
+                    <p>
+                      對你來說工作是什麼？該如何擺脫工作的厭世感？<br>
+                      透過 AI 語音情緒互動課程，帶你將工作的疲憊與厭倦，化為正向的生活動力！
+                    </p>  
+                  </div>
+
+                  <div class="row align-items-center">
+                    <div class="col-12 col-lg-4 col-md-4">
+                      <div class="text-center"><img src="assets/img/img1.png"/></div>
+                    </div>
+                    <div class="col-12 col-lg-8 col-md-8">
+                      <p class="note">
+                        <span class="text-warning">你將學會</span><br>
+                        《善用情緒管理，強化職場溝通力》<br>
+                        《遇到逆境挫折，讓情緒韌性來幫助你》<br>
+                        《如何將工作低潮期轉化為工作動力》<br>
+                        《工作、家庭、感情之間的平衡生活》<br>
+                      </p>
+                    </div>
+                  </div>
+                  
+                </div>
               </div>
             </div>
           </div>
 
           <div class="col-lg-6 mt-4 mt-lg-0">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
-              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>B｜尋找身心靈平衡</h4>
-                <span># 生活情緒平衡</span>
-                <p>
-                  總是非常在意別人的反應？他人一句無心的話總讓你玻璃心碎滿地？<br>
-                  善用 AI 語音情緒互動課程，帶你活出人生的自我價值，不再受他人情緒的擺佈！
-                </p>
-                <p>
-                  你將學會<br>
-                  《情緒敏感調節》<br>
-                  《肯定自我的價值》<br>
-                  《正向心理學，情緒感恩日記》<br>
-                  《辨識情緒勒索、設立人我界線》<br>
-                  《客觀衡量你的情緒》<br>
-                </p>
+            <div class="d-flex align-items-start" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+              <div class="topic-card color-2">
+
+                <div class="card-top">
+                  <div class="card-num">B</div>
+                  <div class="card-title">
+                    <h4>尋找身心靈平衡</h4>
+                    <span># 生活情緒平衡</span>
+                  </div>
+                </div>
+                
+                <div class="card-info">
+
+                  <div class="description">
+                    <p>
+                      總是非常在意別人的反應？他人一句無心的話總讓你玻璃心碎滿地？<br>
+                      善用 AI 語音情緒互動課程，帶你活出人生的自我價值，不再受他人情緒的擺佈！
+                      <br>
+                    </p>  
+                  </div>
+
+                  <div class="row align-items-center">
+                    <div class="col-12 col-lg-4 col-md-4">
+                      <div class="text-center"><img src="assets/img/img1.png"/></div>
+                    </div>
+                    <div class="col-12 col-lg-8 col-md-8">
+                      <p class="note">
+                        <span class="text-warning">你將學會</span><br>
+                        《情緒敏感調節》《肯定自我的價值》<br>
+                        《正向心理學，情緒感恩日記》<br>
+                        《辨識情緒勒索、設立人我界線》<br>
+                        《客觀衡量你的情緒》
+                      </p>
+                    </div>
+                  </div>
+                  
+                </div>
               </div>
             </div>
           </div>
 
           <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
-              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>C｜累積人際情緒存摺</h4>
-                <span># 增進人際關係</span>
-                <p>
-                  上有父母下有兒女，工作忙碌又該怎麼維護幸福的家庭？<br>
-                  善用 AI 語音情緒互動課程，帶你強化情緒溝通能力，建立穩固的親密關係。
-                </p>
-                <p>
-                  你將學會<br>
-                  《如何建立深度交流的親密關係》<br>
-                  《說沒兩句就吵架？親子間的情緒溝通技巧》<br>
-                  《培養傾聽的能力與耐心》<br>
-                  《看見自我、家人的情感需要》<br>
-                </p>
+            <div class="d-flex align-items-start" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+              <div class="topic-card color-3">
+
+                <div class="card-top">
+                  <div class="card-num">C</div>
+                  <div class="card-title">
+                    <h4>累積人際情緒存摺</h4>
+                    <span># 增進人際關係</span>
+                  </div>
+                </div>
+                
+                <div class="card-info">
+
+                  <div class="description">
+                    <p>
+                      上有父母下有兒女，工作忙碌又該怎麼維護幸福的家庭？<br>
+                      善用 AI 語音情緒互動課程，帶你強化情緒溝通能力，建立穩固的親密關係。
+                      <br>
+                    </p>  
+                  </div>
+
+                  <div class="row align-items-center">
+                    <div class="col-12 col-lg-4 col-md-4">
+                      <div class="text-center"><img src="assets/img/img1.png"/></div>
+                    </div>
+                    <div class="col-12 col-lg-8 col-md-8">
+                      <p class="note">
+                        <span class="text-warning">你將學會</span><br>
+                        《《如何建立深度交流的親密關係》<br>
+                        《說沒兩句就吵架？親子間的情緒溝通技巧》<br>
+                        《培養傾聽的能力與耐心》<br>
+                        《看見自我、家人的情感需要》
+                      </p>
+                    </div>
+                  </div>
+                  
+                </div>
               </div>
             </div>
           </div>
 
           <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>D｜提升情緒商數(EQ</h4>
-                <span># 培養高EQ能力</span>
-                <p>
-                  根據統計，有15-20%的成年人會經歷嚴重的情緒困擾。究竟我們會面臨哪些常見的情緒困擾？遇到時又該如何面對？<br>
-                  善用 AI 音情緒助手功能，讓你再也不擔心這些問題找上你
-                </p>
-                <p>
-                  你將學會辨別這些疾病風險並避免它們<br>
-                  《Burnout 工作耗竭過勞》<br>
-                  《憂鬱症》<br>
-                  《廣泛性焦慮症、恐慌症》<br>
-                  《隱性睡眠障礙》<br>
-                  《創傷後壓力症候群》<br>
-                </p>
+            <div class="d-flex align-items-start" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
+              <div class="topic-card color-4">
+
+                <div class="card-top">
+                  <div class="card-num">D</div>
+                  <div class="card-title">
+                    <h4>提升情緒商數(EQ)</h4>
+                    <span># 培養高EQ能力</span>
+                  </div>
+                </div>
+                
+                <div class="card-info">
+
+                  <div class="description">
+                    <p>
+                      根據統計，有 15-20% 的成年人會經歷嚴重的情緒困擾。究竟我們會面臨哪些常見的情緒困擾？遇到時又該如何面對？<br>
+                      善用 AI 語音情緒助手功能，讓你再也不擔心這些問題找上你
+                    </p>  
+                  </div>
+
+                  <div class="row align-items-center">
+                    <div class="col-12 col-lg-4 col-md-4">
+                      <div class="text-center"><img src="assets/img/img1.png"/></div>
+                    </div>
+                    <div class="col-12 col-lg-8 col-md-8">
+                      <p class="note">
+                        <span class="text-warning">你將學會辨別這些疾病風險並避免它們</span><br>
+                        《Burnout工作耗竭過勞》<br>
+                        《憂鬱症》《廣泛性焦慮症、恐慌症》<br>
+                        《隱性睡眠障礙》<br>
+                        《創傷後壓力症候群》<br>
+                      </p>
+                    </div>
+                  </div>
+                  
+                </div>
               </div>
             </div>
           </div>
@@ -354,7 +421,7 @@
 
     <!-- ======= Share Section ======= -->
     <section id="share" class="share section-bg">
-      <div class="container" data-aos="fade-up">
+      <div class="container" data-aos="fade-down" data-aos-duration="1500">
 
         <div class="section-title">
           <h2>
@@ -364,7 +431,7 @@
 
         <div class="share-content">
           <ul>
-            <li data-aos="fade-right" data-aos-delay="100">
+            <li data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
               <span class="img"><img src="https://www.dada-master.com/dadamaster_public/event/dada_reading_q3/images/share/01.png"></span>
               <span class="txt">
                 <p class="title">葉小姐-財務會計</p>
@@ -372,7 +439,7 @@
               </span>
             </li>
 
-            <li data-aos="fade-left" data-aos-delay="200">
+            <li data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
               <span class="txt">
                 <p class="title">張小姐-大學生心輔老師</p>
                 <p>有時候我們說了很多學生也不一定聽得進去，但若有一個AI情緒語音助手可以在夜晚的時候陪伴他，有一些內容可以讓他去吸收，這樣不單單只是聽老師講而是他們也可以學習如何做情緒管理。有很多時候無法及時陪伴學生，透過Here Hear聽聽可以幫助我在輔導有情緒困擾的學生，提供給他們好的心理素質。</p>
@@ -382,7 +449,7 @@
               </span>
             </li>
 
-            <li data-aos="fade-right" data-aos-delay="300">
+            <li data-aos="fade-right" data-aos-duration="800" data-aos-delay="300">
               <span class="img"><img src="https://www.dada-master.com/dadamaster_public/event/dada_reading_q3/images/share/03.png"></span>
               <span class="txt">
                 <p class="title">黃先生-專案經理PM</p>
@@ -390,7 +457,7 @@
               </span>
             </li>
 
-            <li data-aos="fade-left" data-aos-delay="400">
+            <li data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
               <span class="txt">
                 <p class="title">D小姐- 職業婦女</p>
                 <p>Here Hear聽聽對我最大的幫助是，幫助我看到和兩個孩子之間溝通模式的問題。以前我總覺得不知道孩子在想什麼，透過Here Hear的情緒引導課程，我變得更懂得傾聽孩子的心聲，懂得關係是互動來的。我很感謝Here Hear聽聽讓我的親子關係變好。</p>
@@ -398,7 +465,7 @@
               <span class="img"><img src="https://www.dada-master.com/dadamaster_public/event/dada_reading_q3/images/share/06.png"></span>
             </li>
 
-            <li data-aos="fade-right" data-aos-delay="500">
+            <li data-aos="fade-right" data-aos-duration="800" data-aos-delay="500">
               <span class="img"><img src="https://www.dada-master.com/dadamaster_public/event/dada_reading_q3/images/share/05.png"></span>
               <span class="txt">
                 <p class="title">Y先生-憂鬱症患者</p>
@@ -413,80 +480,159 @@
 
     <!-- ======= Doctor Section ======= -->
     <section id="doctor" class="doctor">
-      <div class="container" data-aos="fade-up">
+      <div class="container" data-aos="fade-up" data-aos-duration="1500">
 
         <div class="section-title">
           <h2>
-            Here Hear 聽聽 心理師團隊
+            Here Hear 聽聽<br>心理師團隊
           </h2>
           <div class="section-heading">
             <p><span>每個 AI 情緒語音助手的課程設計，都是由具證照的心理師精心設計製作</span></p>
           </div>
         </div>
 
-        <div class="swiper-container docSwiper">
-          <div class="swiper-wrapper">
+        <div class="owl-carousel owl-theme">
 
-            <div class="swiper-slide">
-              <div class="doc-item">
-                <div class="doctor-item">
-                  <div class="doc-img">
-                    <img src="assets/img/doctor/01.jpg" alt="">
-                  </div>
-                  <div class="doc-text">
-                    <h4>詹宗儀</h4>
-                    <h6>看見心理諮商所 所長</h6>
-                    <p>Yoga &amp; Therapy Certificate of Uttarakhand University Sanskrit</p>
-                  </div>
-                </div>  
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="doc-item">
-                <div class="doctor-item">
-                  <div class="doc-img">
-                    <img src="assets/img/doctor/02.jpg" alt="">
-                  </div>
-                  <div class="doc-text">
-                    <h4>Lori Kennedy</h4>
-                    <h6>Yoga Trainer</h6>
-                    <p>Yoga &amp; Therapy Certificate of Uttarakhand University Sanskrit</p>
-                    <div class="doc-social">
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                      <a href="#"><i class="fa fa-instagram"></i></a>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
+          <div class="item">
+            <div class="doc-item">
+              <div class="doctor-item">
+                  <div class="row">
+                    <div class="col-lg-5 doc-img doc-1 d-flex flex-column justify-content-center align-items-stretch">
+                    </div>
+                    <div class="col-lg-7 align-items-stretch">
+                      <div class="doc-text">
+                        <h4>
+                          詹宗儀<span> 心理師</span>
+                        </h4>
+                        <h6>
+                          看見心理諮商所 心理師兼副所長<br>
+                          台北市衛生局 自殺防治講師
+                        </h6>
+                        <p>專長領域：</p>
+                          <p class="caption">
+                            LGBT多元性別族群、
+                            同志自我認同與跨性別議題、
+                            HIV與成癮物質議題、
+                            短期心理動力取向、
+                            深度自我探索與催眠治療、
+                            親密關係與伴侶諮商、
+                            生涯／職涯議題、
+                            情緒管理與壓力調適
+                          </p>
+                      </div>
                     </div>
                   </div>
-                </div>  
-              </div>
+              </div>  
             </div>
-
-            <div class="swiper-slide">
-              <div class="doc-item">
-                <div class="doctor-item">
-                  <div class="doc-img">
-                    <img src="assets/img/doctor/03.jpg" alt="">
-                  </div>
-                  <div class="doc-text">
-                    <h4>Lori Kennedy</h4>
-                    <h6>Yoga Trainer</h6>
-                    <p>Yoga &amp; Therapy Certificate of Uttarakhand University Sanskrit</p>
-                    <div class="doc-social">
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                      <a href="#"><i class="fa fa-instagram"></i></a>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div>  
-              </div>
-            </div>
-
           </div>
-          <div class="swiper-pagination"></div>
-        </div>
+
+          <div class="item">
+            <div class="doc-item">
+              <div class="doctor-item">
+                  <div class="row">
+                    <div class="col-lg-5 d-flex flex-column justify-content-center align-items-stretch doc-img doc-2">
+                    </div>
+                    <div class="col-lg-7 align-items-stretch">
+                      <div class="doc-text">
+                        <h4>
+                          林少湲<span> 心理師</span>
+                        </h4>
+                        <h6>
+                          看見心理諮商所 心理師兼副所長<br>
+                          榮光育幼院 特約心理師<br>
+                          台灣選擇性緘默症協會 理事
+                        </h6>
+                        <p>專長領域：</p>
+                          <p class="caption">
+                            深度自我與情感探索、
+                            原生家庭議題、
+                            人際關係議題、
+                            親密關係議題、
+                            身體化心理困擾、
+                            情緒困擾與壓力調適、
+                            職涯探索與困擾、
+                            焦慮症（如選擇性緘默症、入學或考試焦慮、社交焦慮症）、
+                            飲食困擾疾患（暴食、厭食）、
+                            兒青諮商與家長諮詢、
+                            生涯發展、職涯探索與規劃
+                          </p>
+                      </div>
+                    </div>
+                  </div>
+              </div>  
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="doc-item">
+              <div class="doctor-item">
+                  <div class="row">
+                    <div class="col-lg-5 doc-img doc-1 d-flex flex-column justify-content-center align-items-stretch">
+                    </div>
+                    <div class="col-lg-7 align-items-stretch">
+                      <div class="doc-text">
+                        <h4>
+                          詹宗儀<span> 心理師</span>
+                        </h4>
+                        <h6>
+                          看見心理諮商所 心理師兼副所長<br>
+                          台北市衛生局 自殺防治講師
+                        </h6>
+                        <p>專長領域：</p>
+                          <p class="caption">
+                            LGBT多元性別族群、
+                            同志自我認同與跨性別議題、
+                            HIV與成癮物質議題、
+                            短期心理動力取向、
+                            深度自我探索與催眠治療、
+                            親密關係與伴侶諮商、
+                            生涯／職涯議題、
+                            情緒管理與壓力調適
+                          </p>
+                      </div>
+                    </div>
+                  </div>
+              </div>  
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="doc-item">
+              <div class="doctor-item">
+                  <div class="row">
+                    <div class="col-lg-5 d-flex flex-column justify-content-center align-items-stretch doc-img doc-2">
+                    </div>
+                    <div class="col-lg-7 align-items-stretch">
+                      <div class="doc-text">
+                        <h4>
+                          林少湲<span> 心理師</span>
+                        </h4>
+                        <h6>
+                          看見心理諮商所 心理師兼副所長<br>
+                          榮光育幼院 特約心理師<br>
+                          台灣選擇性緘默症協會 理事
+                        </h6>
+                        <p>專長領域：</p>
+                          <p class="caption">
+                            深度自我與情感探索、
+                            原生家庭議題、
+                            人際關係議題、
+                            親密關係議題、
+                            身體化心理困擾、
+                            情緒困擾與壓力調適、
+                            職涯探索與困擾、
+                            焦慮症（如選擇性緘默症、入學或考試焦慮、社交焦慮症）、
+                            飲食困擾疾患（暴食、厭食）、
+                            兒青諮商與家長諮詢、
+                            生涯發展、職涯探索與規劃
+                          </p>
+                      </div>
+                    </div>
+                  </div>
+              </div>  
+            </div>
+          </div>
+      </div>
 
       </div>
     </section><!-- End Team Section -->
@@ -495,74 +641,68 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-
     <div class="footer-top">
       <div class="container">
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Arsha</h3>
+            <div><img src="assets/img/logo.png" alt="" class="img-fluid"></div>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
+              <br>
               <strong>Phone:</strong> +1 5589 55488 55<br>
               <strong>Email:</strong> info@example.com<br>
             </p>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
+          <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Product Management</a></li>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Graphic Design</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Product Management</a></li>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Graphic Design</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Social Networks</h4>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>社群媒體</h4>
             <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
             </div>
           </div>
 
         </div>
       </div>
     </div>
-
     <div class="container footer-bottom clearfix">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Arsha</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-
-    
-    
+      <div class="copyright text-center">
+        &copy; Copyright <strong><span>Bamboo Design & Development Ltd</span></strong>. All Rights Reserved
+      </div>    
     </div>
   </footer><!-- End Footer -->
 
@@ -570,47 +710,39 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
+  <script src="assets/vendor/owlcarousel/jquery.min.js"></script>
+  <script src="assets/vendor/owlcarousel/owl.carousel.min.js"></script> 
+  
   <script src="assets/vendor/aos/aos.js"></script>
+  <script>
+    AOS.init({
+    });
+  </script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <!-- <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script> -->
-  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <!-- <script src="assets/vendor/waypoints/noframework.waypoints.js"></script> -->
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
-  <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper(".docSwiper", {
-      loop: true,
-      slidesPerView: 5,
-      spaceBetween: 30,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      // Navigation arrows
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      nextButton: '.swiper-button-next',
-      prevButton: '.swiper-button-prev',
-      breakpoints: {
-        // when window width is <= 499px
-        499: {
-            slidesPerView: 1,
-            spaceBetweenSlides: 50
+    $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:30,
+      nav:false,
+      responsive:{
+        0:{
+            items:1
         },
-        // when window width is <= 999px
-        999: {
-            slidesPerView: 3,
-            spaceBetweenSlides: 50
+        768:{
+            items:2
+        },
+        1024:{
+            items:2
+        },
+        1200:{
+            items:2
         }
       }
-    });
+    })
   </script>
 
 </body>
