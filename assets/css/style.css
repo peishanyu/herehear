@@ -385,7 +385,7 @@ h1, h2, h3, h4, h5, h6 {
   background: url(../img/main-base.png) no-repeat center;
   background-size: cover;
   text-align: center;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   z-index:0;
 }
 
@@ -638,7 +638,6 @@ section {
 .section-title h2 {
   font-size: 48px;
   font-weight: bold;
-  text-transform: uppercase;
   margin-bottom: 30px;
   padding-bottom: 20px;
   position: relative;
@@ -1323,6 +1322,11 @@ section .btn-primary:hover {
   -ms-flex-pack: left;
   justify-content: left;
   list-style: none;
+  padding: 0;
+  /* -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; */
 }
 
 .share .share-content ul li:nth-of-type(odd) {
@@ -1335,10 +1339,7 @@ section .btn-primary:hover {
   margin-right: 1%;
 }
 
-.share .share-content ul li:nth-of-type(odd) .img {
-  width: 125px;
-}
-.share .share-content ul li:nth-of-type(odd) .img img {
+.share .share-content ul li:nth-of-type(n) .img {
   width: 125px;
   image-rendering: auto;
 }
@@ -1370,25 +1371,17 @@ section .btn-primary:hover {
   top: 48px;
 }
 
-.share .share-content ul li:nth-of-type(odd) .txt .title {
-  color: #E66500;
-  font-weight: bold;
-  font-size: 26px;
-  padding-bottom: 5px;
-  padding-top: 5px;
-}
-
 .share .share-content ul li:nth-of-type(even) {
   width: 48%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  /* -ms-flex-wrap: wrap;
+  flex-wrap: wrap; */
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-left: 1%;
 }
 
@@ -1419,69 +1412,158 @@ section .btn-primary:hover {
   top: 48px;
 }
 
-.share .share-content ul li:nth-of-type(even) .txt .title {
+.share .share-content ul li:nth-of-type(n) .txt .title {
   color: #E66500;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 22px;
+  margin-bottom: 0;
   padding-bottom: 5px;
   padding-top: 5px;
 }
 
+.share .share-content ul li:nth-of-type(n) .txt p {
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1100px) {
+  .share .share-content ul li:nth-of-type(n) {
+      width: 100%;
+      margin-top: 40px;
+  }
+}
+
 @media (max-width: 1024px) {
   .share .share-content ul {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .share .share-content ul li:nth-of-type(odd), 
   .share .share-content ul li:nth-of-type(even) {
-      width: 100%;
-      margin-top: 30px;
+    width: 100%;
+    margin-top: 30px;
   }
+}
+
+@media (max-width: 768px) {
+  .share .share-content ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .share .share-content ul li:nth-of-type(n) {
+    width: 100%;
+  }
+  .share .share-content ul li:nth-of-type(n) .img img {
+    width: 100%;
+  }
+  .share .share-content ul li:nth-of-type(n) .img, 
+  .share .share-content ul li:nth-of-type(n+1) .img {
+    width: 65px;
+  }
+  .share .share-content ul li:nth-of-type(n) .txt {
+    width: calc(100% - 85px);
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .share .share-content ul li:nth-of-type(odd) .txt {
+    margin-left: 20px;
+    padding: 15px;
+  }
+  .share .share-content ul li:nth-of-type(even) .txt {
+    margin-right: 20px;
+    padding: 15px;
+  }
+  .share .share-content ul li:nth-of-type(n) .txt .title {
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+  .share .share-content ul li:nth-of-type(n) .txt p {
+    font-size:1rem;
+    line-height:1.5;
+  }
+}
+
+@media (max-width: 768px) {
 }
 
 /*--------------------------------------------------------------
-# Breadcrumbs
+# Doctor
 --------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 15px 0;
-  background: #f3f5fa;
-  min-height: 40px;
-  margin-top: 72px;
+.doctor .swiper-container {
+  width: 100%;
+  height: 100%;
 }
 
-@media (max-width: 992px) {
-  .breadcrumbs {
-    margin-top: 68px;
-  }
-}
+.doctor .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
 
-.breadcrumbs h2 {
-  font-size: 28px;
-  font-weight: 600;
-  color: rgba(var(--color-dark-blue));
-}
-
-.breadcrumbs ol {
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0 0 10px 0;
-  margin: 0;
-  font-size: 14px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
-.breadcrumbs ol li + li {
-  padding-left: 10px;
+.doctor .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.breadcrumbs ol li + li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #4668a2;
-  content: "/";
+.doctor .docSwiper .doc-item {
+  margin-bottom: 32px;
 }
+
+.doctor .doctor-item {
+  position: relative;
+  -webkit-box-shadow: 0px 5px 6px rgb(72 105 114 / 15%);
+  box-shadow: 0px 5px 6px rgb(72 105 114 / 15%);
+  border-radius: 14px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.doctor-item .doc-img {
+}
+.doctor-item .doc-img img {
+}
+.doctor-item .doc-text {
+  position: absolute;
+  bottom: 0;
+  background: rgb(255 255 255 / 90%);
+  padding-top: 1rem;
+}
+.doctor-item .doc-text h4 {
+  font-weight: 400;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 10px;
+}
+.doctor-item .doc-text h6 {
+  color: #f65d5d;
+  margin-bottom: 20px;
+}
+.doctor-item .doc-text p {
+  font-size: 15px;
+  color: #666666;
+  line-height: 1.8;
+}
+
 
 /*--------------------------------------------------------------
 # Footer
