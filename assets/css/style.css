@@ -518,6 +518,10 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
 }
 
+.audio-area .audio-icon div:active {
+  transform: scale(.95);
+}
+
 .audio-area .audio-icon div::after {
   position: absolute;
   content: "";
@@ -1021,9 +1025,6 @@ section .btn-primary:hover {
 }
 
 @media (max-width:540px) {
-  .topic .card-top {
-    display:block;
-  }
   .topic .card-top .card-title {
     display:block;
   }
@@ -1126,6 +1127,10 @@ section .btn-primary:hover {
     margin: 0 auto 30px auto;
     padding: 30px 40px;
   }
+}
+
+.page-subscribe #pricing {
+  height: 100vh;
 }
 
 /*--------------------------------------------------------------
@@ -1396,6 +1401,115 @@ section .btn-primary:hover {
       min-height: 40vh;
   }
 }
+
+/*--------------------------------------------------------------
+# Frequently Asked Questions
+--------------------------------------------------------------*/
+.faq .faq-list, .faq .cis-list {
+  padding: 0 100px;
+}
+
+.faq .faq-list ul {
+  padding: 0;
+  list-style: none;
+}
+
+.faq .faq-list li + li {
+  margin-top: 15px;
+}
+
+.faq .faq-list li {
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+  position: relative;
+}
+
+.faq .faq-list a {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 0 30px;
+  outline: none;
+  cursor: pointer;
+}
+
+.faq .faq-list a.link {
+  display:inline-block;
+  font-weight: 500;
+  padding:0;
+}
+
+.faq .faq-list .icon-help {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  left: 20px;
+  color: #47b2e4;
+}
+
+.faq .faq-list .icon-show, .faq .faq-list .icon-close {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.faq .faq-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 0;
+}
+
+.faq .faq-list .icon-show {
+  display: none;
+}
+
+.faq .faq-list a.collapsed {
+  color: #37517e;
+  transition: 0.3s;
+}
+
+.faq .faq-list a.collapsed:hover {
+  color: #47b2e4;
+}
+
+.faq .faq-list a.collapsed .icon-show {
+  display: inline-block;
+}
+
+.faq .faq-list a.collapsed .icon-close {
+  display: none;
+}
+
+.faq .cis-list {
+  margin-top: 50px;
+  padding: 0 100px;
+}
+.faq .cis-list ul li {
+  margin-bottom:20px;
+  font-size:20px;
+}
+
+@media (max-width: 1200px) {
+  .faq .faq-list, .faq .cis-list {
+    padding: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Process
+--------------------------------------------------------------*/
+#process {background:#e4fff4;}
+@media (max-width: 1024px) {
+  .process .hide-mobile {display:none;}
+  .process .arrow-step img {
+    margin-top: 20px;
+    transform: rotate(90deg);
+  }
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
