@@ -1018,10 +1018,15 @@ section .btn-primary:hover {
 
 @media (max-width:768px) {
   .topic .topic-card {min-height:auto;}
+}
+
+@media (max-width:540px) {
   .topic .card-top {
     display:block;
   }
-  .topic .card-num {margin-bottom:1rem;}
+  .topic .card-top .card-title {
+    display:block;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1119,7 +1124,7 @@ section .btn-primary:hover {
   .pricing .box {
     max-width: 100%;
     margin: 0 auto 30px auto;
-    padding: 40px;
+    padding: 30px 40px;
   }
 }
 
@@ -1329,31 +1334,6 @@ section .btn-primary:hover {
   background-position:top center;
   background-size:cover;
 }
-@media (max-width:1400px) {
-  .doctor-item .doc-img {
-    min-height: 55vh;
-  }
-}
-@media (max-width:1024px) {
-  .doctor-item .doc-img {
-    min-height: 45vh;
-  }
-}
-.doctor-item .doc-text {
-  padding: 1.5rem .5rem;
-  color:#fff;
-}
-
-@media (max-width: 768px) {
-  .doctor-item .doc-img {
-    min-height:35vh;
-  }
-  .doctor-item .doc-text {
-    padding: 1.5rem;
-    min-height:35vh;
-  }
-}
-
 .doctor-item .doc-text h4 {
   font-weight: 400;
   margin-bottom: 10px;
@@ -1389,7 +1369,33 @@ section .btn-primary:hover {
 .doctor-item .doc-img.doc-3 {
   background-image:url(../img/doctor/02.jpg);
 }
+@media (max-width:1400px) {
+  .doctor-item .doc-img {
+    min-height: 55vh;
+  }
+}
+@media (max-width:1024px) {
+  .doctor-item .doc-img {
+    min-height: 45vh;
+  }
+}
+.doctor-item .doc-text {
+  padding: 1.5rem .5rem;
+  color:#fff;
+}
 
+@media (max-width: 768px) {
+  .doctor-item .doc-text {
+    padding: 1.5rem;
+    min-height:35vh;
+  }
+}
+@media (max-width:540px) {
+  .doctor-item .doc-text {
+      padding: 1.5rem;
+      min-height: 40vh;
+  }
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
