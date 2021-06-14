@@ -902,19 +902,6 @@ section .btn-primary:hover {
   color:rgba(var(--color-purple));
 }
 
-@media (max-width: 1024px) {
-  .intro-us .content, .intro-us .accordion-list {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (max-width: 992px) {
-  .intro-us .content {
-    padding-top: 30px;
-  }
-}
-
 .intro-us .icon-box {
   border-radius: 20px;
   border:rgba(var(--primary-color)) solid 3px;
@@ -956,6 +943,48 @@ section .btn-primary:hover {
 
 .intro-us .icon-box:hover h4 {
   color: rgba(var(--primary-color));
+}
+.page-subscribe .process .icon-box {
+  padding:20px 15px;
+}
+.page-subscribe .process .icon-box .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-subscribe .process .icon-box .icon .num {
+  width:24px;
+  height:24px;
+  margin-right:5px;
+  border-radius:50%;
+  font-weight: bold;
+  font-size:16px;
+  text-align:center;
+  line-height:24px;
+  background-color:rgba(var(--color-dark-blue));
+  display:block;
+  color: #fff;
+}
+.page-subscribe .process .icon-box:hover .icon .num {
+  background-color:rgba(var(--primary-color));
+}
+
+.page-subscribe .process .icon-box .icon h4 {
+  margin-bottom:0;
+  font-size:20px;
+}
+
+@media (max-width: 1024px) {
+  .intro-us .content, .intro-us .accordion-list {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .intro-us .content {
+    padding-top: 30px;
+  }
 }
 
 @media (max-width:540px) {
@@ -1035,6 +1064,7 @@ section .btn-primary:hover {
 --------------------------------------------------------------*/
 #pricing {
   background:url(../img/bg-pricing.jpg) no-repeat center;
+  background-size: cover;
 }
 .pricing .section-title h2::before {
   background: #9bca50;
@@ -1107,6 +1137,15 @@ section .btn-primary:hover {
   right:-75px;
 }
 
+.page-subscribe #pricing {
+  min-height: 100vh;
+}
+@media (max-width:1400px) {
+  .page-subscribe #pricing {
+    padding-top:120px;
+  }
+}
+
 @media (max-width: 992px) {
   .pricing .box {
     max-width: 80%;
@@ -1129,9 +1168,6 @@ section .btn-primary:hover {
   }
 }
 
-.page-subscribe #pricing {
-  height: 100vh;
-}
 
 /*--------------------------------------------------------------
 # Share
@@ -1507,6 +1543,84 @@ section .btn-primary:hover {
   .process .arrow-step img {
     margin-top: 20px;
     transform: rotate(90deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Rules
+--------------------------------------------------------------*/
+#rules {background-color:#fffded}
+.rules .rules-table {
+  position: relative;
+  box-shadow: 0 3px 20px -2px rgb(20 45 100 / 10%);
+  border-radius: 25px;
+}
+.rules .rules-table .table-head {
+  padding: 25px 30px;
+  border-radius: 25px 25px 0 0;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  font-weight: normal;
+}
+.rules .rules-table .table-body {
+  padding: 30px;
+  border-radius:0 0 25px 25px;
+  font-size:20px;
+  font-weight: normal;
+  background-color:#fff;
+}
+.rules .rules-table .table-body ul li {
+  margin-bottom:10px;
+  line-height:1.5;
+}
+.rules .rules-table .foot-cta {
+  border-top: 1px solid #ddd;
+  margin-top: 30px;
+  padding: 20px 0 10px;
+  text-align: center;
+}
+.rules .rules-table .foot-cta a {
+  display: inline-block;
+  padding: 12px 48px;
+  border-radius: 100rem;
+  transition: 0.3s;
+}
+
+.rules .table-monthly .foot-cta a {
+  border:2px solid #4da3ef;
+  color: #4da3ef;
+}
+.rules .table-monthly .foot-cta a:hover {
+  background-color: #4da3ef;
+  color: #fff;
+}
+.rules .table-yearly .foot-cta a {
+  border:2px solid #e86677;
+  color: #e86677;
+}
+.rules .table-yearly .foot-cta a:hover {
+  background-color:#e86677;
+  color: #fff;
+}
+
+.rules .table-monthly .table-head {
+  background: rgba(67,152,242,1);
+  background: linear-gradient(148deg, rgba(142,234,219,1) 0%, rgba(67,152,242,1) 100%);
+}
+.rules .table-yearly .table-head {
+  background: rgb(181,160,241);
+  background: linear-gradient(148deg, rgba(181,160,241,1) 0%, rgba(252,136,146,1) 100%);
+}
+
+@media (max-width:540px) {
+  .rules .rules-table .table-head {
+    padding:15px;
+    font-size:22px;
+  }
+  .rules .rules-table .table-body {
+    padding:20px;
+    font-size:18px;
   }
 }
 
