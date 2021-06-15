@@ -1,8 +1,9 @@
 :root {
   --primary-color:71, 178, 228; /* #47b2e4 */
-  --color-purple:163, 38, 131; /* #a32683 */
+  --color-purple:255, 69, 0; /* #ff4500 */
   --color-dark-blue:55 81 126; /* #37517e */
   --color-dark-black:16 31 65; /* #101F41 */
+  --color-moringsky:225,250,255; /* #e1faff */
 }
 
 /*--------------------------------------------------------------
@@ -165,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: space-between;
   font-weight: 500;
-  color: rgba(var(--color-dark-black));
+  color:rgba(var(--color-dark-blue));
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -174,7 +175,7 @@ h1, h2, h3, h4, h5, h6 {
   color:rgba(var(--color-purple));
 }
 
-.navbar .getstarted {
+.navbar .getstarted, .try-btn a {
   padding: 6px 24px;
   margin-left: 30px;
   border-radius: 50px;
@@ -184,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
-.navbar .getstarted:hover {
+.navbar .getstarted:hover, .try-btn a:hover {
   color: #fff;
   background: rgba(var(--color-purple));
 }
@@ -629,7 +630,7 @@ section {
 }
 
 .section-bg {
-  background-color:#f7f2cb;
+  background-color:#caf1fd;
 }
 
 .section-title {
@@ -783,12 +784,13 @@ section .btn-primary:hover {
 --------------------------------------------- 
 */
 #intro {
-  background: rgb(224,244,248);
-  background: linear-gradient(0deg, rgba(224,244,248,1) 0%, rgba(255,253,237,1) 100%);
+  /* background: rgb(224,244,248);
+  background: linear-gradient(0deg, rgba(224,244,248,1) 0%, rgba(255,253,237,1) 100%); */
+  background:rgba(var(--color-moringsky));
 }
 
 .intro-us img.img-fluid {
-  margin-bottom:3rem;
+  margin-bottom:1rem;
 }
 
 .intro-us .content h3 {
@@ -825,17 +827,10 @@ section .btn-primary:hover {
   background-size: cover;
 }
 
-@media (max-width: 768px) {
-  .intro-us .about-item {
-    text-align:center;
-    margin-bottom:1.5rem;
-  }
-  .intro-us p, .section-heading p {
-    margin-top:1rem;
-  }
-  .intro-us .section-content p {
-    margin-top:0;
-  }
+.try-btn a {
+  padding: 12px 48px;
+  font-size:20px;
+  transition: 0.3s;
 }
 
 .intro-us .content ul {
@@ -872,10 +867,11 @@ section .btn-primary:hover {
   line-height: 30px;
   text-align: left;
 }
-
-.intro-us .device-txt li {list-style: none;}
-
+.intro-us .device-txt ul {
+  padding-left:1rem;
+}
 .intro-us .device-txt ul li {
+  list-style: none;
   position: relative;
   padding-left: 60px;
   font-size: 22px;
@@ -929,6 +925,7 @@ section .btn-primary:hover {
   font-size: 24px;
   color: rgba(var(--color-dark-blue));
   transition: ease-in-out 0.3s;
+  font-weight: 700;
 }
 
 .intro-us .icon-box p {
@@ -986,7 +983,22 @@ section .btn-primary:hover {
     padding-top: 30px;
   }
 }
-
+@media (max-width: 768px) {
+  .intro-us .about-item {
+    text-align:center;
+    margin-bottom:1.5rem;
+  }
+  .intro-us p, .section-heading p {
+    margin-top:1rem;
+  }
+  .intro-us .section-content p {
+    margin-top:0;
+  }
+  .pricing .box {
+    max-width: 80%;
+    margin: 0 auto 30px auto;
+  }
+}
 @media (max-width:540px) {
   .intro-us p,.intro-us .device-txt ul li {
     font-size:18px;
@@ -997,7 +1009,7 @@ section .btn-primary:hover {
 /*--------------------------------------------------------------
 # Topoc
 --------------------------------------------------------------*/
-#topic {background:#e4fff4;}
+#topic {background:rgba(var(--color-moringsky));}
 .topic .topic-card {
   width:100%;
   border-radius:25px;
@@ -1091,6 +1103,7 @@ section .btn-primary:hover {
   font-size:30px;
   font-weight: normal;
 }
+.pricing .info p {font-size:18px;}
 .pricing h4 {
   font-size: 48px;
   margin-bottom: 15px;
@@ -1140,26 +1153,24 @@ section .btn-primary:hover {
 .page-subscribe #pricing {
   min-height: 100vh;
 }
+
 @media (max-width:1400px) {
   .page-subscribe #pricing {
     padding-top:120px;
   }
 }
-
 @media (max-width: 992px) {
   .pricing .box {
     max-width: 80%;
     margin: 0 auto 30px auto;
   }
 }
-
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .pricing .box {
     max-width: 80%;
     margin: 0 auto 30px auto;
   }
 }
-
 @media (max-width: 540px) {
   .pricing .box {
     max-width: 100%;
@@ -1210,7 +1221,7 @@ section .btn-primary:hover {
   background-color: #fff;
   border-radius: 20px;
   margin-left: 30px;
-  padding: 20px;
+  padding: 10px 20px;
   font-size: 22px;
   line-height: 36px;
   position: relative;
@@ -1273,7 +1284,7 @@ section .btn-primary:hover {
 }
 
 .share .share-content ul li:nth-of-type(n) .txt .title {
-  color: #E66500;
+  color:rgba(var(--color-purple));
   font-weight: bold;
   font-size: 22px;
   margin-bottom: 0;
@@ -1351,7 +1362,7 @@ section .btn-primary:hover {
 /*--------------------------------------------------------------
 # Doctor
 --------------------------------------------------------------*/ 
-#doctor {background: #fffded;}
+#doctor {background:rgba(var(--color-moringsky));}
 .doctor .doc-item {
   margin-bottom:20px;
 }
@@ -1629,7 +1640,7 @@ section .btn-primary:hover {
 --------------------------------------------------------------*/
 #footer {
   font-size: 14px;
-  background: #74a564;
+  background:rgba(var(--color-dark-blue))
 }
 
 #footer .footer-top {
