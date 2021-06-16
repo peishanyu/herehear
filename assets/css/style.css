@@ -1380,7 +1380,7 @@ section .btn-primary:hover {
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
-  background: #607d8b;
+  background:#7b98c0;
   border-radius: 35px;
   overflow: hidden;
 }
