@@ -3,7 +3,7 @@
   --color-purple:255, 69, 0; /* #ff4500 */
   --color-dark-blue:55 81 126; /* #37517e */
   --color-dark-black:16 31 65; /* #101F41 */
-  --color-moringsky:225,250,255; /* #e1faff */
+  --color-moringsky:218,243,255; /* #e1faff */
 }
 
 /*--------------------------------------------------------------
@@ -630,7 +630,7 @@ section {
 }
 
 .section-bg {
-  background-color:#caf1fd;
+  background-color:#bdeaff;
 }
 
 .section-title {
@@ -785,7 +785,7 @@ section .btn-primary:hover {
 */
 #intro {
   /* background: rgb(224,244,248);
-  background: linear-gradient(0deg, rgba(224,244,248,1) 0%, rgba(255,253,237,1) 100%); */
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(var(--color-moringsky)) 100%); */
   background:rgba(var(--color-moringsky));
 }
 
@@ -1057,10 +1057,10 @@ section .btn-primary:hover {
   font-weight:700;
 }
 
-.topic .topic-card.color-1 {background-color:#7cabd3;}
-.topic .topic-card.color-1 .card-num {color:#7cabd3;}
-.topic .topic-card.color-2 {background-color:#9c87b4;}
-.topic .topic-card.color-2 .card-num {color:#9c87b4;}
+.topic .topic-card.color-1 {background-color:#70c6c6;}
+.topic .topic-card.color-1 .card-num {color:#70c6c6;}
+.topic .topic-card.color-2 {background-color:#7cabdb;}
+.topic .topic-card.color-2 .card-num {color:#7cabdb;}
 .topic .topic-card.color-3 {background-color:#c09c90;}
 .topic .topic-card.color-3 .card-num {color:#c09c90;}
 .topic .topic-card.color-4 {background-color:#e78c8a;}
