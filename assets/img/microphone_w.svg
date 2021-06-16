@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="75" height="75" viewBox="0 0 75 75">
   <defs>
     <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" y2="0.39" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#afff8b"/>
-      <stop offset="0.255" stop-color="#a1eb80"/>
-      <stop offset="1" stop-color="#69cf7f"/>
+      <stop offset="0" stop-color="#c2e3ff"/>
+      <stop offset="0.255" stop-color="#80d9eb"/>
+      <stop offset="1" stop-color="#5aa3e2"/>
     </linearGradient>
   </defs>
   <g id="microphone_w" transform="translate(-2351 -860)">
